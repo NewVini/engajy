@@ -1,4 +1,4 @@
-import { WA_LINK } from '../config.js';
+import { WA_LINK, onWhatsAppClick } from '../config.js';
 import { HERO_CHECKS } from '../data.js';
 import { Check, WhatsApp } from '../Icons.jsx';
 
@@ -23,7 +23,7 @@ export default function Hero() {
           <p className="hero-analysis reveal d3">Receba uma análise personalizada para o seu perfil.</p>
 
           <div className="hero-actions reveal d3">
-            <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-grad btn-lg">🚀 Turbinar meu perfil agora</a>
+            <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-grad btn-lg" onClick={onWhatsAppClick}>🚀 Turbinar meu perfil agora</a>
             <span className="hero-micro">
               <WhatsApp />
               Resposta em poucos minutos

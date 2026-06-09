@@ -10,6 +10,13 @@ export const WHATSAPP = {
 
 export const WA_LINK = `https://wa.me/${WHATSAPP.phone}?text=${encodeURIComponent(WHATSAPP.message)}`;
 
+export function onWhatsAppClick(e) {
+  if (typeof window.gtag_report_conversion === 'function') {
+    e.preventDefault();
+    window.gtag_report_conversion(WA_LINK);
+  }
+}
+
 export const COMPANY = {
   brand: 'Engajy',
   legalName: 'INNOVATE SERVIÇOS DIGITAIS LTDA',
