@@ -14,5 +14,5 @@ export const COMPANY = {
   brand: 'Engajy',
   legalName: 'INNOVATE SERVIÇOS DIGITAIS LTDA',
   cnpj: '35.555.991/0001-53',
-  whatsappLabel: '(011) 91650-1341',
+  whatsappLabel: '(11) 91650-1341',
 };
