@@ -34,7 +34,7 @@ Para publicar, suba o conteúdo da pasta `dist/` em qualquer hospedagem (Vercel,
 | Cores, fontes e tokens da marca | `src/styles.css` (bloco `:root`) |
 | Imagens (logo, hero, fotos) | `public/assets/` |
 
-> **WhatsApp:** já configurado para **(11) 92561-8023** com a mensagem
+> **WhatsApp:** já configurado para **(011) 91650-1341** com a mensagem
 > "Olá vim pelo site, gostaria de saber sobre os seguidores." — troque em `src/config.js`.
 
 ## 🧩 Estrutura
