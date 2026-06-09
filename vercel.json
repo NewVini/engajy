@@ -1,0 +1,8 @@
+{
+  "installCommand": "cd engajay-react && npm install",
+  "buildCommand": "cd engajay-react && npm run build",
+  "outputDirectory": "engajay-react/dist",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
