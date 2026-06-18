@@ -1,7 +1,5 @@
 import { BENEFITS } from '../data.js';
-import { ShieldCheck, Star, Trending } from '../Icons.jsx';
-
-const ICONS = { shieldCheck: ShieldCheck, star: Star, trending: Trending };
+import { BENEFIT_ICONS } from '../Icons.jsx';
 
 export default function Benefits() {
   return (
@@ -12,7 +10,7 @@ export default function Benefits() {
       <div className="wrap">
         <div className="bgrid">
           {BENEFITS.map((b, i) => {
-            const Icon = ICONS[b.icon];
+            const Icon = BENEFIT_ICONS[b.icon];
             return (
               <article className={`bcard reveal d${i + 1}`} key={b.title}>
                 <div className="bicon"><Icon /></div>

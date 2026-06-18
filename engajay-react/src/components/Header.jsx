@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { WA_LINK, onWhatsAppClick } from '../config.js';
+import { WA_LINK } from '../config.js';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,13 +20,13 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`header${scrolled ? ' scrolled' : ''}`} data-screen-label="header">
+    <header className={`header${scrolled ? ' scrolled' : ''}`} id="header" data-screen-label="header">
       <div className="wrap">
-        <a href="#" className="brand"><img src="/assets/engajay-logo.png" alt="Engajy" className="logo" /></a>
+        <a href="#" className="brand"><img src="/assets/engajay-logo-opt.png" alt="Engajy" className="logo" /></a>
         <div className="header-cta">
           <a href="#beneficios" className="header-link">Benefícios</a>
           <a href="#depoimentos" className="header-link">Depoimentos</a>
-          <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-ghost" onClick={onWhatsAppClick}>Falar no WhatsApp</a>
+          <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-ghost">Falar no WhatsApp</a>
         </div>
       </div>
     </header>

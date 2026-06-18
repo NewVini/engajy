@@ -19,7 +19,7 @@ function Privacidade() {
       <h3>2. Como usamos seus dados</h3>
       <p>Utilizamos as informações para: (i) responder às suas solicitações e prestar atendimento via WhatsApp; (ii) elaborar uma análise e recomendação personalizada para o seu perfil; (iii) melhorar a experiência de navegação; e (iv) cumprir obrigações legais.</p>
       <h3>3. Compartilhamento</h3>
-      <p>A {COMPANY.brand} não vende nem aluga seus dados pessoais. O compartilhamento ocorre apenas com prestadores de serviço essenciais à operação (plataformas de mensagens e hospedagem) e quando exigido por autoridade competente.</p>
+      <p>A {COMPANY.brand} não vende nem aluga seus dados pessoais. O compartilhamento ocorre apenas com prestadores de serviço essenciais à operação (plataformas de mensagens, pagamento e hospedagem) e quando exigido por autoridade competente.</p>
       <h3>4. Cookies</h3>
       <p>Utilizamos cookies para entender como os visitantes interagem com o site e mensurar campanhas. Você pode desativá-los nas configurações do navegador.</p>
       <h3>5. Seus direitos (LGPD)</h3>
@@ -84,10 +84,7 @@ export default function LegalModal({ doc, onClose }) {
   if (!doc) return null;
 
   return (
-    <div
-      className="legal-overlay open"
-      onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}
-    >
+    <div className="legal-overlay open" onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
       <div className="legal-modal" role="dialog" aria-modal="true">
         <button className="legal-close" aria-label="Fechar" onClick={onClose}><Close /></button>
         {doc === 'privacidade' ? <Privacidade /> : <Termos />}

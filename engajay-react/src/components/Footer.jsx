@@ -1,4 +1,4 @@
-import { WA_LINK, COMPANY, onWhatsAppClick } from '../config.js';
+import { WA_LINK, COMPANY } from '../config.js';
 
 export default function Footer({ onOpenLegal }) {
   return (
@@ -7,7 +7,7 @@ export default function Footer({ onOpenLegal }) {
         <div className="top">
           <div className="fcol" style={{ maxWidth: 320 }}>
             <img
-              src="/assets/engajay-logo.png"
+              src="/assets/engajay-logo-opt.png"
               alt="Engajy"
               className="logo"
               style={{ filter: 'brightness(0) invert(1)', opacity: 0.95, marginBottom: 14, height: 70 }}
@@ -26,7 +26,7 @@ export default function Footer({ onOpenLegal }) {
           <div className="fcol">
             <h4>Contato</h4>
             <div className="footer-links">
-              <a href={WA_LINK} target="_blank" rel="noopener" onClick={onWhatsAppClick}>WhatsApp: {COMPANY.whatsappLabel}</a>
+              <a href={WA_LINK} target="_blank" rel="noopener">WhatsApp: {COMPANY.whatsappLabel}</a>
             </div>
           </div>
         </div>
