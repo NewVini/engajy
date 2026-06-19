@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { WA_LINK } from '../config.js';
+import { WA_LINK, onWhatsAppClick } from '../config.js';
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -26,7 +26,7 @@ export default function Header() {
         <div className="header-cta">
           <a href="#beneficios" className="header-link">Benefícios</a>
           <a href="#depoimentos" className="header-link">Depoimentos</a>
-          <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-ghost">Falar no WhatsApp</a>
+          <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-ghost" onClick={onWhatsAppClick}>Falar no WhatsApp</a>
         </div>
       </div>
     </header>

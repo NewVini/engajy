@@ -1,4 +1,4 @@
-import { WA_LINK } from '../config.js';
+import { WA_LINK, onWhatsAppClick } from '../config.js';
 import { WhatsApp, Shield } from '../Icons.jsx';
 
 export default function FinalCTA() {
@@ -9,7 +9,7 @@ export default function FinalCTA() {
           <h2>Fale com um especialista e fortaleça seu perfil</h2>
           <p>Descubra agora a melhor estratégia para aumentar sua autoridade e presença digital no Instagram.</p>
           <div className="btn-wrap">
-            <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-wa btn-lg">
+            <a href={WA_LINK} target="_blank" rel="noopener" className="btn btn-wa btn-lg" onClick={onWhatsAppClick}>
               <WhatsApp />
               FALE AGORA NO WHATSAPP
             </a>
