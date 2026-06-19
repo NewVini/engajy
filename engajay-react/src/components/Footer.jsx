@@ -7,7 +7,7 @@ export default function Footer({ onOpenLegal }) {
         <div className="top">
           <div className="fcol" style={{ maxWidth: 320 }}>
             <img
-              src="/assets/engajay-logo-opt.png"
+              src="/assets/engajay-logo.png"
               alt="Engajy"
               className="logo"
               style={{ filter: 'brightness(0) invert(1)', opacity: 0.95, marginBottom: 14, height: 70 }}

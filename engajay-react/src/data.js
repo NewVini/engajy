@@ -7,24 +7,6 @@ export const HERO_CHECKS = [
   'Suporte via WhatsApp',
 ];
 
-export const FEATURES = [
-  {
-    icon: 'bolt',
-    title: 'Envio Imediato',
-    text: 'Seu pedido é ativado assim que o pagamento é aprovado.',
-  },
-  {
-    icon: 'refresh',
-    title: 'Reposição Automática',
-    text: 'Perdeu algum seguidor em até 30 dias? Repomos sem custo nenhum.',
-  },
-  {
-    icon: 'lock',
-    title: 'Segurança Total',
-    text: 'Só preciso do seu @. Nenhum dado de acesso é solicitado.',
-  },
-];
-
 export const TESTIMONIALS = [
   {
     photo: '/assets/dep-mulher-1-sm.png',

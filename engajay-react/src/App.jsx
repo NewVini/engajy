@@ -1,11 +1,9 @@
 import { useState } from 'react';
 import Header from './components/Header.jsx';
 import Hero from './components/Hero.jsx';
-import StoreSection from './components/StoreSection.jsx';
-import Features from './components/Features.jsx';
 import Testimonials from './components/Testimonials.jsx';
 import Benefits from './components/Benefits.jsx';
-import ProvaCTA from './components/ProvaCTA.jsx';
+import FinalCTA from './components/FinalCTA.jsx';
 import Footer from './components/Footer.jsx';
 import LegalModal from './components/LegalModal.jsx';
 import FloatingWhatsApp from './components/FloatingWhatsApp.jsx';
@@ -19,11 +17,9 @@ export default function App() {
     <>
       <Header />
       <Hero />
-      <StoreSection />
-      <Features />
       <Testimonials />
       <Benefits />
-      <ProvaCTA />
+      <FinalCTA />
       <Footer onOpenLegal={setLegalDoc} />
       <LegalModal doc={legalDoc} onClose={() => setLegalDoc(null)} />
       <FloatingWhatsApp />
