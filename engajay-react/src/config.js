@@ -11,10 +11,11 @@ export const WHATSAPP = {
 export const WA_LINK = `https://wa.me/${WHATSAPP.phone}?text=${encodeURIComponent(WHATSAPP.message)}`;
 
 export function onWhatsAppClick(e) {
+  e.preventDefault();
   if (typeof window.gtag_report_conversion === 'function') {
-    e.preventDefault();
     return window.gtag_report_conversion(WA_LINK);
   }
+  window.open(WA_LINK, '_blank', 'noopener');
 }
 
 export const COMPANY = {
